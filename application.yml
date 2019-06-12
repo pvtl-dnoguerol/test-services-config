@@ -12,4 +12,13 @@ spring:
   data:
     rest:
       default-page-size: 10
+  zipkin:
+    discoveryClientEnabled: false
+    baseUrl: http://my-zipkin-server.cfapps.io/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1.0
+
 message: Hello world!
